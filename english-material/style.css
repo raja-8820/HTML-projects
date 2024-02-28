@@ -1,0 +1,73 @@
+/* fist decorate the individual anchor tag
+using padding , marigin ,use font , color , active ,visited property etc... To enhance.
+
+*/
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-color: black;
+    width: 350px;
+    
+    display: block;
+    margin: 50px 40%;
+    
+    
+}
+.heading{
+    width: 100%;
+    background-color: #36413E;
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 2rem 2rem 0 0 ;
+    h1{
+        padding-left: 30px;
+    }
+    
+}
+.main{
+    border: 2px solid black;
+    border-radius: 2rem; 
+
+}
+li{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    list-style-type: none;
+}
+li:nth-child(5){
+    border-radius: 0 0 2rem 2rem;
+}
+
+
+    li:hover{
+    background-color: grey;
+    font-weight: bolder;
+}
+
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.food{
+    text-align: center;
+    padding-left: 80px;
+    color: black;
+    display: block;
+}
+.food:hover{
+    font-weight: bolder;
+    
+}

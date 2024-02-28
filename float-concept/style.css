@@ -1,0 +1,39 @@
+.html{
+    border: 3px solid orange;
+    float: left;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+
+.section1{
+    
+    padding: 20px;
+    border: 4px solid black;
+}
+.css{
+    float: right;
+    border: 3px solid blue;
+    padding: 15px;
+    margin-left: 10px;
+    margin: 20px;
+}
+
+.section2{
+    margin-top: 20px;
+    border : 4px solid black;
+    
+}
+.js{
+    float: left;
+    border: 3px solid yellow;
+    padding: 15px;
+    margin: 20px;
+    
+    
+}
+.section3{
+    margin-top: 20px;
+    border : 4px solid black;
+    
+}
