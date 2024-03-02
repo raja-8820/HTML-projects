@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 3rem;
+    
+}
+
+div{
+    height: 100vh;
+}
+
+h1{ 
+   text-align: center;
+   height: 150px;
+   padding-top: auto; 
+   position: sticky;
+   top: 0; 
+}
+
+
+
+.header1{
+    background-color: red;
+    color: white;
+    position: sticky;
+    top: 0;
+   
+}
+
+.header2{
+    background-color: blue;
+    color: white;
+}
+
+.header3{
+    background-color: yellow;
+    color: white;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+
+a{
+    padding-right: 100px;
+    color: white;
+    text-decoration: solid;
+}
+
+button{
+    position: fixed;
+    z-index: 1;
+    font-size: 2rem;
+}
+
+.button1{
+    left: 0;
+    top: 300px;
+
+}
+
+.button2{
+    left: 0;
+    top: 350px;
+}
