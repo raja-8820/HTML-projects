@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    grid-template-rows: 50px;
+    gap: 1rem;
+}
+
+.element{
+    border: 2px solid black ;
+    background-color: black;
+
+}
+
+.element:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1 2;
+    background-color: red;
+}
