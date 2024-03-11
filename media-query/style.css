@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+div{
+    background-image: radial-gradient(white,grey);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.header {
+    background-color: black;
+    color: white;
+    display: block;
+    width: 100vw;
+    text-align: center;
+    
+}
+.footer{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    text-align: center;
+    display: fixed  ;  
+}
+
+/* Basicv syntax for media query
+
+@media (media-type) and (condition-breakpoint){
+
+    //css rules (or) css selector with properties
+
+}
+
+*/
+
+@media screen and (min-width:576px){      /*mobile screen*/
+    div{
+        background-image: radial-gradient(white,rgb(255, 70, 101));
+    }
+}
+
+@media screen and (min-width:768px){     /*tablet screen*/
+    div{
+        background-image: radial-gradient(white,red);
+    }
+}
+
+@media screen and (min-width:992px){     /*laptop screen*/
+    div{
+        background-image: radial-gradient(white,yellow );
+    }
+}
+
+@media screen and (min-width:1200px){     /*TV screen*/
+    div{
+        background-image: radial-gradient(white,blue );
+    }
+}
+
