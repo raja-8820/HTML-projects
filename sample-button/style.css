@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color:#dc5d19;
+}
+
+div{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    color: var(--color);
+    letter-spacing: 1.5px;
+    text-transform:uppercase ;
+    font-size: 15px;
+}
+
+button:hover{
+   letter-spacing: 3px;
+   background-color: var(--color);
+   color: white;
+   box-shadow: var(--color) 0px 7px 29px;
+}
+
+button:active{
+    letter-spacing: 3px;
+    background-color:var(--color);
+    color: white;
+    box-shadow:var(--color) 0px 7px 29px;
+    transform: translateY(10px);
+
+}

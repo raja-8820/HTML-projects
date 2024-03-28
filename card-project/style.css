@@ -6,6 +6,11 @@ html{
     scroll-behavior: smooth;
 }
 
+:root{
+    --BGCOLOR : black ;
+    --FONT-COLOR :white;
+}
+
 
 body{
    background-image: radial-gradient(white,grey);
@@ -14,8 +19,8 @@ body{
    
 }
 header{
-    background-color: black;
-    color: white;
+    background-color: var(--BGCOLOR);
+    color: var(--FONT-COLOR);
     padding: 5px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
@@ -46,8 +51,8 @@ a{
 }
 
 footer{
-    background-color: black;
-    color: white;
+    background-color: var(--BGCOLOR);
+    color: var(--FONT-COLOR);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     position: fixed;

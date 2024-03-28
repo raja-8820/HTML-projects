@@ -1,0 +1,9 @@
+:root{
+    --myvariable1 : black;
+    --myvariable2  : white;
+}
+
+h1{
+    background-color: var(--myvariable1);
+    color: var(--myvariable2);
+}
