@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column   ;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.box{
+    width:150px;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: black;
+}
+.box:first-child{
+    background-color: yellow;
+    transform: translateX(50% , 25%);
+    transform:scaleX(110%);
+    transform: skewx(-5deg );
+    
+}
+
+.box:nth-child(2){
+    background-color: red;
+    transform: scale(110% , 110%);
+   
+}
+
+.box:last-child{
+    background-color: aqua;
+    transform: rotateX(30deg);
+    transform: skewX(-10deg);
+}
+.box:first-child:hover{
+    background-color:  pink;
+    color: red;
+    transform:rotate(90deg);
+    transition-property: all; 
+    transition-duration: 3s;
+    transition-delay: 0.5s;
+}
+.box:nth-child(2):hover{
+    background-color: blue;
+    color: white;
+    transition: all 3s 0.6s;
+    
+}  
+.animation{   /* animation is a last child another class name */
+    animation-name:simple;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes simple {
+    0%{
+        transform: translate(0);
+    }
+
+    25%{
+        transform:translateX(300px) rotate(180deg);
+    }
+
+    50%{
+        transform: translate(0) rotate(-180);
+    }
+
+    75%{
+        transform: translateX(-300px) rotate(-180) ;
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+.animate{
+    animation: 7s linear 2s normal forwards slide2 ;
+}
+
+@keyframes slide2{
+    0%{
+        transform: scale(100%,100%);
+    }
+    25%{
+        transform: scale(125%,125%);
+    }
+    50%{
+        transform: scale(150%,150%);
+    }
+    75%{
+        transform: scale(125%,125%);
+    }
+    100%{
+        transform: scale(100%,100%);
+    }
+}

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+html{
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+body{
+    min-width: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.main{
+    background-color: #333;
+    color: whitesmoke;
+}
+.header{
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    background-color: transparent;
+    border: none;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;  
+}
+
+.menu , .menu::before , .menu::after {
+    background-color:white;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;     /* which follows the button relative position */
+    transition: all 0.5s;
+}
+
+.menu::before , .menu::after{
+    content: "";         /* Even if you don't want to insert any visible content, you still need to specify an empty string "" as the value for the content property*/
+}
+
+.menu::before {
+    transform: translate(-20px , -12px);
+}
+
+.menu::after{
+    transform: translate(-20px , 12px);
+}
+
+ul{
+    list-style-type: none;      /* for list bullets */
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+li{
+    padding: 0.5rem;
+    border-top: 1px solid whitesmoke ;
+}
+
+a{
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+a:any-link{
+/*     any-link pseudo-class in CSS is used to target any anchor element that is an unisited link , visited link , or a link of any other state
+*/
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover , a:focus {
+    transform: scale(1.2) ; /* increase 20% from original size */
+    transition: all 0.3s;  /*  scaling size for 0.3 seconds duration */
+}   
+        /* animation process */
+ nav{
+    background-color: #333 ;
+    display: none;
+    transform-origin: top center;
+    animation-name: slide-menu-bar ;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+header:hover{
+   nav{
+        display: block;
+    }
+    .menu{
+        background-color: transparent;
+    }
+    .menu::before{
+        transform: translateX(-20px) rotate(45deg);
+       
+    }
+    .menu::after{
+        transform: translateX(-20px) rotate(-45deg);
+    }
+}
+
+
+
+@keyframes slide-menu-bar{
+    0%{
+        transform: scaleY(0);    /* height of the menu bar */
+    }
+
+    80%{
+        transform: scaleY(1.2);  /* height increased by 120% */
+    }
+
+    100%{
+        transform: scaleY(1);   /* original height */
+    }
+}
+
